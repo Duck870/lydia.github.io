@@ -17,11 +17,33 @@
 
     body {
       background-color: rgb(238, 152, 198);
+      size: clamp(3rem, 8vw, 7rem);
+    }
+
+    .yes {
+    background-color:rgb(105, 162, 99) ;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding: clamp(0.75rem, 2vw, 1.5rem)
+           clamp(1.5rem, 4vw, 3rem);
+    }
+    
+    .container {
+    display: flex;
+    justify-content: center; /* center on X */
+     gap: 4.5rem;   
     }
   </style>
 </head>
 
 <body>
   <h1>I LOVE YOU</h1>
+    
+
+    <div class="container">
+        <button class="yes"; onclick="alert('I LOVE YOU TOO ❤️')">
+            yes
+        <button class="yes"; onclick="alert('I LOVE YOU TOO ❤️')"; style = "background-color: orange;">
+            no
+    </div>
 </body>
 </html>
