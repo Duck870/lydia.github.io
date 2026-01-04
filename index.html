@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +18,20 @@
 
     body {
       background-color: rgb(238, 152, 198);
-      size: clamp(3rem, 8vw, 7rem);
+      font-size: clamp(3rem, 8vw, 7rem);
     }
 
     .yes {
-    background-color:rgb(105, 162, 99) ;
+    --main-color:rgb(105, 162, 99);
+    background-color: var(--main-color);
+    color: color-mix(in srgb, var(--main-color) 70%, rgb(19, 24, 51));
+
     font-size: clamp(1.5rem, 4vw, 3rem);
     padding: clamp(0.75rem, 2vw, 1.5rem)
            clamp(1.5rem, 4vw, 3rem);
+    border-radius:clamp(4rem, 3vw, 4rem);
+    border-width: 1rem;
+    border-color: color-mix(in srgb, var(--main-color) 70%, rgb(19, 24, 51));
     }
     
     .container {
@@ -36,14 +43,15 @@
 </head>
 
 <body>
-  <h1>I LOVE YOU</h1>
-    
+  <h1>Will you be my valentime?</h1>
 
     <div class="container">
-        <button class="yes"; onclick="alert('I LOVE YOU TOO ❤️')">
+        <button class="yes" onclick="window.location.href='love.html'">
             yes
-        <button class="yes"; onclick="alert('I LOVE YOU TOO ❤️')"; style = "background-color: orange;">
+        </button>
+        <button class="yes" onclick="window.location.href='rejection.html'" style = "--main-color: rgb(255, 0, 0)">
             no
+        </button>
     </div>
 </body>
 </html>

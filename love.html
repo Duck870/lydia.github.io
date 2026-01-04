@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+    <style>
+    h1 {
+      color: rgb(145, 68, 148);
+      font-size: clamp(3rem, 8vw, 7rem);
+      text-align: center;
+    }
+
+    p{
+        font-size: 3vw;
+    }
+    body {
+          background-color: rgb(238, 152, 198);
+        }
+    .card {
+      height: 25vw;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 0px;
+    padding: 0em;
+    }
+
+    .card p {
+    height: 85%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    background: #212121;
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .card p:hover {
+      flex: 4;
+    }
+
+    .card p span {
+      min-width: 10em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+    }
+
+    .card p:hover span {
+     transform: rotate(0);
+    }
+
+    </style>
+<body>
+    
+    <h1> yay i love you so much enjoy the website</h1>
+    <div class="card">
+    <p><span>Favriote pictures</span></p>
+    <p><span>first date</span></p>
+    <p><span>special message</span></p>
+</div>
+    <!-- Your content goes here -->
+</body>
+</html>
